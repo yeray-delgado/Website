@@ -6,6 +6,39 @@
     <title>Activitat 2 - Yeray Delgado</title>
 </head>
 <body>
-    
+    <form>
+        <legend><h2>Altaveus</h2></legend>
+        <label for ="model">
+            Model:
+            <select name="model" >
+                <option value="" disabled selected>Escull el model</option>
+                <option value="0">R4</option>
+                <option value="1">R5</option>
+                <option value="2">SR1</option>
+            </select>
+        </label>
+        <br><br>
+        <label for="potencia">
+            Potència màxima (50-100): 
+            <input type="number" value="50" min="50" max="100">
+        </label>
+        <br><br>
+        <label for="bluetooth">
+            Bluetooth:
+            <select name="bluetooth">
+                <option value="" disabled selected>...</option>
+                <option value="0">Si</option>
+                <option value="1">No</option>
+            </select>
+        </label>
+        <br><br>
+        <label for="color">
+            Color:
+            <input type="text">
+        </label>
+        <br><br>
+        <button>Enviar</button>
+
+    </form>
 </body>
 </html>
