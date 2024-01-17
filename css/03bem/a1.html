@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 1 - BEM</title>
+    <style>
+        .header {
+            background-color: #9c9c9c;
+            padding: 10px;
+            display: flex; 
+            align-items: center; 
+        }
+
+        .header_logo {
+            width: 100px; 
+            margin-right: 20px; 
+        }
+
+        .navegador_hipervincle {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        .header_formulari {
+            margin-left: auto; 
+        }
+
+        .formulari_buscar {
+            padding: 5px;
+
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <img src="logo.png" alt="Logo" class="header_logo">
+        
+        <nav class="header_navegador">
+            <a href="#" class="navegador_hipervincle">Inici</a>
+            <a href="#" class="navegador_hipervincle">Serveis</a>
+            <a href="#" class="navegador_hipervincle">Contacte</a>
+        </nav>
+        
+        <form action="#" method="get" class="header_formulari">
+            <input type="text" placeholder="Cerca..." class="formulari_buscar">
+            <button type="submit" class="formulari_boto">Cercar</button>
+        </form>
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 2 - BEM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .comentaris {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .nou-comentari {
+            margin-bottom: 20px;
+        }
+
+        .nou-comentari_autor {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .nou-comentari_text {
+            margin-bottom: 10px;
+        }
+
+        .llista-comentaris {
+            list-style: none;
+            padding: 0;
+        }
+
+        .comentari {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .comentari_autor {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .comentari_text {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="comentaris">
+        <div class="nou-comentari">
+            <div class="nou-comentari_autor">Comentari 1</div>
+            <div class="nou-comentari_text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            </div>
+        </div>
+
+        <ul class="llista-comentaris">
+            <li class="comentari">
+                <div class="comentari_autor">Comentari 2</div>
+                <div class="comentari_text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                </div>
+            </li>
+            <li class="comentari">
+                <div class="comentari_autor">Comentari 3</div>
+                <div class="comentari_text">
+                    <p></p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
