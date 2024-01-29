@@ -1,12 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Índex Activitats - Yeray Delgado</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Meu Portfoli</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Verdana', sans-serif;
+      background-color: #FEFAE0;
+      color: #535353;
+    }
+
+    #nav-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      background-color: #D4A373;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #nav-bar a {
+      color: #535353;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    #nav-bar a:hover {
+      color: #CCD5AE;
+    }
+
+    .container {
+      margin-top: 80px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    section {
+      margin-bottom: 40px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #E9EDC9;
+    }
+
+    h1, h2, p {
+      margin-bottom: 15px;
+    }
+
+    #inici {
+      background-color: #CCD5AE;
+      padding: 60px;
+      text-align: center;
+    }
+
+    #inici img {
+        position: relative;
+      border-radius: 35%;
+      max-width: 230px;
+      margin-top: 15px;
+    }
+
+    #sobre-mi {
+      background-color: #FEFAE0;
+    }
+
+    #index {
+      background-color: #FAEDCD;
+      height: 150px;
+    }
+   
+    .index-nav a {
+        font-size: 15.5px;
+      color: #949191;
+      text-decoration: underline;
+      margin: 0 15px;
+    }
+
+    .index-nav a:hover {
+      color: #CCD5AE;
+    }
+
+    #contacte {
+      background-color: #D4A373;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #FEFAE0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #535353;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #D4A373;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #D4A373;
+      color: #FEFAE0;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #CCD5AE;
+    }
+  </style>
+
 </head>
+
 <body>
-    <h1><b>Hola</b></h1>
-    <a href=""></a>
+
+<nav id="nav-bar">
+    <a href="#inici">Inici</a>
+  <a href="#sobre-mi">Sobre Mi</a>
+  <a href="#index">Índex</a>
+  <a href="#contacte">Contacte</a>
+</nav>
+
+<div class="container">
+  <section id="inici">
+    <h1>Yeray Delgado Bonet</h1>
+    <p>Benvingut/da al meu portfoli! Aquí guardaré els meus treballs.
+        <br>Espero que t'agradi!</p>
+        <br>
+        <img src="images/asdsaddgjas.jpg" alt="Yeray">
+
+  </section>
+
+  <section id="sobre-mi">
+    <h2>Sobre Mi</h2>
+    <p>Hola! Em dic Yeray i sóc alumne del CFGS Desenvolupament d'Aplicacions Multiplataforma
+        a l'Institut Caparrella i això és per un projecte de classe 😁
+    </p>
+  </section>
+
+  <section id="index">
+    <h2>Índex d'activitats</h2>
+    <nav class="index-nav">
+      <a href="index-activitats/indexhtml.html" target="_blank">Activitats HTML</a>
+      <a href="index-activitats/indexcss.html" target="_blank">Activitats CSS</a>
+
+    </nav>
+  </section>
+  
+
+  <section id="contacte">
+    <h2>Contacte</h2>
+    <form action="#" method="post">
+      <label for="nom">Nom:</label>
+      <input type="text" id="nom" name="nom" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="missatge">Missatge:</label>
+      <textarea id="missatge" name="missatge" rows="4" required></textarea>
+
+      <button type="submit">Enviar Missatge</button>
+    </form>
+  </section>
+</div>
+
 </body>
 </html>
